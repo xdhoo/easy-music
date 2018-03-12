@@ -1,0 +1,10 @@
+.r-content img{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+.r-item-title{
+    border-bottom: 1px solid #545454;
+    color: #ffffff
+}

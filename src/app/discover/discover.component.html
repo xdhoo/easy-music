@@ -1,12 +1,15 @@
-<div class="col-md-12">
+<div class="d-wrapper">
   <div class="d-nav">
     <ul class="list-inline">
-      <li><a href="">个性推荐</a></li>
+      <li><a routerLink="/discover/recommend">个性推荐</a></li>
       <li><a href="">歌单</a></li>
       <li><a href="">主播电台</a></li>
       <li><a href="">排行榜</a></li>
       <li><a href="">歌手</a></li>
       <li><a href="">最新音乐</a></li>
     </ul>
+  </div>
+  <div class="d-content">
+    <router-outlet></router-outlet>
   </div>
 </div>
