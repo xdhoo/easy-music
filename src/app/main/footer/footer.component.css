@@ -1,0 +1,12 @@
+.f-content{
+    width:800px;
+    margin: auto;
+    padding: 10px
+}
+.f-content a{
+    margin-right: 10px;
+    color: #B3B2B2
+}
+.f-content a:hover{
+    color: #ffffff
+}

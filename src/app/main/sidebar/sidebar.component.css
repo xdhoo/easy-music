@@ -1,0 +1,20 @@
+.s-list{
+    color: #9E9C9C
+}
+.s-list a{
+    color: #C4C1C1;
+    text-decoration: none;
+}
+.s-list a:hover{
+    color: #ffffff;
+}
+.s-list > li{
+    list-style: none;
+    height: 30px;
+    font-size: 14px
+}
+
+.s-list-head{
+    margin-left: -30px;
+    margin-top: 10px;
+}

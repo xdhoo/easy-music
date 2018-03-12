@@ -1,0 +1,23 @@
+.h-content{
+    color: #ffffff;
+    padding-top: 7px;
+}
+.h-content input{
+    margin-top: 6px;
+    background-color: #000; 
+    width: 220px;
+    padding-left: 10px;
+    line-height: 24px;
+    color: #fff;
+    border:none;
+    outline: none;
+    border-radius: 15px;
+}
+.h-content a{
+    line-height: 38px;
+    color: #B1AEAE;
+    text-decoration: none;
+}
+.h-content a:hover{
+    color: #fff
+}
