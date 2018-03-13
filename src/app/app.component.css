@@ -4,21 +4,42 @@
 .header-wrapper{
     background-color: #242424;
     height: 50px;
-    border-bottom: 2px solid #AD1D1D
+    border-bottom: 2px solid #AD1D1D;
 }
 
 /*content-wrapper*/
+
 .content-wrapper{
     background-color: #242424;
     width:100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #AD1D1D;
 }
 .c-left-wrapper{
     float: left;
     background-color: #353434;
     width:245px;
+    height: 900px;
     display: block;
     border-right: 1px solid #555555;
+    position: fixed;
     
+}
+@media (min-width:768px) {
+    .c-right-wrapper{
+        padding:0 10px;
+    }
+}
+@media (min-width:992px) {
+    .c-right-wrapper{
+        padding:0 20px;
+    }
+}
+@media (min-width:1200px) {
+    .c-right-wrapper{
+        padding:0 20px;
+    }
 }
 .c-right-wrapper{
     margin-left: 245px;

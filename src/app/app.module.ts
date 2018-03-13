@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule }  from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
@@ -15,6 +15,11 @@ import { RankingListComponent } from './discover/ranking-list/ranking-list.compo
 import { SingerComponent } from './discover/singer/singer.component';
 import { LatestMicComponent } from './discover/latest-mic/latest-mic.component';
 import { DiscoverModule } from './discover/discover.module';
+import { FmComponent } from './fm/fm.component';
+import { VideoComponent } from './video/video.component';
+import { FriendsComponent } from './friends/friends.component';
+import { TagsComponent } from './main/tags/tags.component';
+import { ListsComponent } from './main/lists/lists.component';
 
 
 @NgModule({
@@ -29,9 +34,15 @@ import { DiscoverModule } from './discover/discover.module';
     RadioStationComponent,
     RankingListComponent,
     SingerComponent,
-    LatestMicComponent
+    LatestMicComponent,
+    FmComponent,
+    VideoComponent,
+    FriendsComponent,
+    TagsComponent,
+    ListsComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     DiscoverModule,
     AppRoutingModule,

@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+    color: #b3abab;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.c-tags{
+    padding-top: 10px;
+}
+.c-tags dt{
+    float: left;
+    margin-right: 10px;
+}
+.c-tags span{
+    margin: 0 10px;
+}
+.c-list li{
+    list-style: none;
+    margin-right: 20px;
+}
+.c-list-img{
+    position: relative;
+}
+.c-list-bottom{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    line-height: 30px;
+    width:100%;
+    background-color: rgba(32, 32, 32, 0.39);
+}
+.c-list-bottom a{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    font-size: 20px;
+}

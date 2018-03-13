@@ -1,0 +1,28 @@
+.fm-content{
+    color: #A5A4A4;
+}
+/*fm-mic*/
+.fm-mic{
+    height:400px;
+    padding: 20px 0px;
+}
+.fm-mic-left button:not(:last-child){
+    margin-right: 30px;
+}
+.fm-mic-left-btns{
+    margin-top: 20px;
+    padding-right: 10px;
+}
+/*fm-comment*/
+.fm-comment{
+    color: #fff
+}
+.fm-comment-input input{
+    height: 40px;
+    background-color: rgba(85, 82, 82, 0.49);
+    border: none;
+}
+.fm-comment-title{
+    border-bottom: 1px solid #545454;
+    margin-bottom: 10px;
+}

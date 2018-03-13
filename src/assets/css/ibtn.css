@@ -1,0 +1,35 @@
+.btn-circle{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 10px;
+    font-size: 24px;
+    line-height: 35px;
+    border-radius: 35px;
+}
+.btn-none{
+    color: rgba(128, 126, 126, 0.88);
+    background-color: rgba(8, 8, 8, 0);
+    border-color: #6B6D6B;
+}
+.btn-none:hover{
+    color: rgba(248, 244, 244, 0.88);
+    background-color: rgba(8, 8, 8, 0);
+    border-color: #6B6D6B;
+}

@@ -6,25 +6,25 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
-    <div class="carousel-inner">
-      <div class="item active">
+    <div class="carousel-inner r-carousel">
+      <div class="item active" style="background-image: url('assets/images/carsouel/b-1.jpg');">
         <a>
-          <img src="assets/images/1.jpg" alt="">              
+          <img src="assets/images/carsouel/1.jpg" alt="">              
         </a>
       </div>
-      <div class="item">
+      <div class="item" style="background-image: url('assets/images/carsouel/b-2.jpg');">
         <a href="#/about">
-          <img src="assets/images/2.jpg"  alt="">              
+          <img src="assets/images/carsouel/2.jpg"  alt="">              
         </a>
       </div>
-      <div class="item">
+      <div class="item" style="background-image: url('assets/images/carsouel/b-3.jpg');">
         <a href="">
-          <img src="assets/images/3.jpg" alt="">              
+          <img src="assets/images/carsouel/3.jpg" alt="">              
         </a>
       </div>
-      <div class="item">
+      <div class="item" style="background-image: url('assets/images/carsouel/b-4.jpg');">
           <a href="">
-            <img src="assets/images/4.jpg" alt="">              
+            <img src="assets/images/carsouel/4.jpg" alt="">              
           </a>
         </div>
     </div>
@@ -34,15 +34,67 @@
       <h5>推荐歌单</h5>
     </div>
     <div class="r-item-body">
+        <app-lists [data]="listData"></app-lists>
+    </div>
+  </div>
+  <div class="r-item">
+    <div class="r-item-title">
+      <h5>独家放送</h5>
+    </div>
+    <div class="r-item-body">
       <ul class="list-inline">
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
-        <li><img src="http://placehold.it/100x100" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="r-item">
+    <div class="r-item-title">
+      <h5>最新音乐</h5>
+    </div>
+    <div class="r-item-body">
+      <table>
+        <tr>
+          <td>a</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td>c</td>
+          <td>d</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="r-item">
+    <div class="r-item-title">
+      <h5>推荐MV</h5>
+    </div>
+    <div class="r-item-body">
+      <ul class="list-inline">
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="r-item">
+    <div class="r-item-title">
+      <h5>主播电台</h5>
+    </div>
+    <div class="r-item-body">
+      <ul class="list-inline">
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
+        <li><img src="http://placehold.it/350x200" alt=""></li>
       </ul>
     </div>
   </div>

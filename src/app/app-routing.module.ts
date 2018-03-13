@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
 import { DiscoverComponent } from './discover/discover.component';
+import { VideoComponent } from './video/video.component';
+import { FmComponent } from './fm/fm.component';
+import { FriendsComponent } from './friends/friends.component';
 
 const routes:Routes = [
     { path: '', redirectTo: '/discover', pathMatch: 'full'},
-    { path: 'discover', component:DiscoverComponent}
+    { path: 'discover', component: DiscoverComponent},
+    { path: 'video', component: VideoComponent},
+    { path: 'fm', component: FmComponent},
+    { path: 'friends', component: FriendsComponent}
 ];
 
 @NgModule({
