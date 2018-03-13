@@ -1,14 +1,5 @@
 <div class="d-wrapper">
-  <div class="d-nav">
-    <ul class="list-inline">
-      <li><a routerLink="/discover/recommend">个性推荐</a></li>
-      <li><a routerLink="/discover/miclist">歌单</a></li>
-      <li><a routerLink="/discover/radio">主播电台</a></li>
-      <li><a routerLink="/discover/rank">排行榜</a></li>
-      <li><a routerLink="/discover/singer">歌手</a></li>
-      <li><a routerLink="/discover/latestmic">最新音乐</a></li>
-    </ul>
-  </div>
+  <app-nav [data]="navData"></app-nav>
   <div class="d-content">
     <router-outlet></router-outlet>
   </div>

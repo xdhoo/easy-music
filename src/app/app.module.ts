@@ -20,6 +20,8 @@ import { VideoComponent } from './video/video.component';
 import { FriendsComponent } from './friends/friends.component';
 import { TagsComponent } from './main/tags/tags.component';
 import { ListsComponent } from './main/lists/lists.component';
+import { VListComponent } from './main/v-list/v-list.component';
+import { NavComponent } from './main/nav/nav.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { ListsComponent } from './main/lists/lists.component';
     VideoComponent,
     FriendsComponent,
     TagsComponent,
-    ListsComponent
+    ListsComponent,
+    VListComponent,
+    NavComponent
   ],
   imports: [
     CommonModule,

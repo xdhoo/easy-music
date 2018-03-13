@@ -30,3 +30,9 @@ export class MusicData {
     album:string;
     time:string;
 }
+
+/*导航数据*/
+export class NavData {
+    navName:string;
+    navUrl:string;
+}

@@ -42,36 +42,36 @@
       <h5>独家放送</h5>
     </div>
     <div class="r-item-body">
-      <ul class="list-inline">
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-      </ul>
+        <app-v-list [data]="videoData"></app-v-list>
     </div>
   </div>
   <div class="r-item">
     <div class="r-item-title">
       <h5>最新音乐</h5>
     </div>
-    <div class="r-item-body">
-      <table>
-        <tr>
-          <td>a</td>
-          <td>b</td>
-        </tr>
-        <tr>
-          <td>c</td>
-          <td>d</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+    <div class="r-item-body t-body">
+      <div class="col-md-6 l-list">
+        <ul>
+          <li class="rib-item">
+            <img src="http://placehold.it/40x40" alt="">
+            <div>
+              <span class="mic-name">super</span>  <br>
+              weixun
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 r-list">
+        <ul>
+          <li class="rib-item">
+            <img src="http://placehold.it/40x40" alt="">
+            <div>
+              <span class="mic-name">super</span>  <br>
+              weixun
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="r-item">
@@ -79,11 +79,7 @@
       <h5>推荐MV</h5>
     </div>
     <div class="r-item-body">
-      <ul class="list-inline">
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-      </ul>
+        <app-v-list [data]="videoData"></app-v-list>
     </div>
   </div>
   <div class="r-item">
@@ -91,11 +87,28 @@
       <h5>主播电台</h5>
     </div>
     <div class="r-item-body">
-      <ul class="list-inline">
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-        <li><img src="http://placehold.it/350x200" alt=""></li>
-      </ul>
+      <div class="col-md-6">
+        <ul>
+          <li class="rib-item">
+            <img src="http://placehold.it/80x80" alt="">
+            <div>
+              <span class="mic-name">super</span>  <br>
+              weixun
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li class="rib-item">
+            <img src="http://placehold.it/80x80" alt="">
+            <div>
+              <span class="mic-name">super</span>  <br>
+              weixun
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

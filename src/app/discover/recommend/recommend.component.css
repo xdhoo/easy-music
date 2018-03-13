@@ -8,6 +8,26 @@
 }
 .r-item-body{
     margin-top: 10px;
+    overflow: hidden;
+}
+.t-body{
+    border: 1px solid #727171;    
+}
+.r-item-body > div{
+    padding-top: 10px;
+}
+.r-item-body .l-list{
+    border-right: 1px solid #727171;
+}
+.rib-item img{
+    float: left  
+}
+.rib-item div{
+    margin-left: 50px;
+}
+.rib-item .mic-name{
+    color: #ffffff;
+    font-size: 16px;
 }
 .r-carousel div{
     background-repeat: repeat-x;
