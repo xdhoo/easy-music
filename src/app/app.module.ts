@@ -24,7 +24,7 @@ import { NavModule } from './main/nav/nav.module';
     DiscoverComponent,    
     FmComponent,
     VideoComponent,
-    FriendsComponent
+    FriendsComponent,
     
   ],
   imports: [

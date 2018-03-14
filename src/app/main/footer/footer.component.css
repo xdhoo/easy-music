@@ -10,3 +10,53 @@
 .f-content a:hover{
     color: #ffffff
 }
+.f_detail_ctrl{
+    float: left;
+}
+.f_progress{
+    padding: 0 20px;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+}
+.f_current_detail{
+    height:14px;
+}
+.f_progress_bar{
+    width:100%;
+    height:2px;
+    box-sizing:border-box;
+    position:relative;
+    cursor:pointer;
+    background-color: #6D6A6A
+}
+.range{
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    margin-left: 0;
+    border-radius: 50%;
+    background-color: #f00;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+    cursor:pointer;
+}
+.range:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0) 60%);
+    top: 50%;
+    margin-top: -12px;
+    margin-left: -9px;
+    cursor: pointer;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}

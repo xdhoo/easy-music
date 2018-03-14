@@ -13,6 +13,7 @@ import { LatestMicComponent } from './latest-mic/latest-mic.component';
 import { ListsModule } from '../main/lists/lists.module';
 import { VListModule } from '../main/v-list/v-list.module';
 import { TagsModule } from '../main/tags/tags.module';
+import { RankModule } from '../main/rank/rank.module';
 
 @NgModule({
     imports: [
@@ -21,7 +22,8 @@ import { TagsModule } from '../main/tags/tags.module';
         CommonModule,
         TagsModule,
         ListsModule,
-        VListModule
+        VListModule,
+        RankModule
     ],
     declarations: [
         RecommendComponent,

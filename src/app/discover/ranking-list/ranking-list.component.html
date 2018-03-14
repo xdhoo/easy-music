@@ -1,3 +1,18 @@
-<p>
-  ranking-list works!
-</p>
+<div>
+  <div class="rl-item">
+    <div class="rl-item-title">
+      <h5> 官方榜 </h5>
+    </div>
+    <div class="rl-item-body">
+      <app-rank [data]="rankData"></app-rank>
+    </div>
+  </div>
+  <div class="rl-item">
+    <div class="rl-item-title">
+      <h5> 全球榜 </h5>
+    </div>
+    <div class="rl-item-body">
+      <app-lists [data]="listData"></app-lists>
+    </div>
+  </div>
+</div>

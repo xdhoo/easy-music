@@ -36,3 +36,10 @@ export class NavData {
     navName:string;
     navUrl:string;
 }
+
+/* 榜单数据 */
+export class RankData {
+    rankName:string;
+    rankImg:string;
+    musiclist:Array<MusicData>;
+}

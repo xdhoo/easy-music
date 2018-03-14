@@ -74,3 +74,28 @@ li{
 .s-menu{
     color: #918f8f;
 }
+
+/*rank component*/
+.rk-content dl{
+    float: left;
+    color: #ffffff;
+    border: 1px solid #918f8f;
+}
+.rk-content dl:not(:last-child){
+    margin-right: 20px;
+}
+.rk-content ol{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.rk-content ol li{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.rk-content ol li:hover{
+    background-color: rgba(117, 116, 116, 0.46)
+}
+.rk-content ol li:nth-child(odd){
+    background-color: rgba(172, 172, 172, 0.13);
+}
