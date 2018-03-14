@@ -1,3 +1,26 @@
-<p>
-  radio-station works!
-</p>
+<div class="rs-content">
+  <div class="rs-item">
+    <div class="rs-item-title">
+      <h5> 精彩节目推荐 </h5>
+    </div>
+    <div class="rs-item-body">
+        <app-lists [data]="listData"></app-lists>
+    </div>
+  </div>
+  <div class="rs-item">
+    <div class="rs-item-title">
+      <h5> 精选电台 </h5>
+    </div>
+    <div class="rs-item-body">
+        <app-lists [data]="bestData"></app-lists>
+    </div>
+  </div>
+  <div class="rs-item">
+    <div class="rs-item-title">
+      <h5> 热门电台 </h5>
+    </div>
+    <div class="rs-item-body">
+        <app-lists [data]="hotData"></app-lists>
+    </div>
+  </div>
+</div>

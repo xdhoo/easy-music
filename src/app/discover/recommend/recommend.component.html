@@ -31,7 +31,8 @@
   </div>
   <div class="r-item">
     <div class="r-item-title">
-      <h5>推荐歌单</h5>
+      <h5>推荐歌单 </h5>
+      <div class="r-item-title-more"><a href="" class="text-right"><span>更多>></span></a></div>
     </div>
     <div class="r-item-body">
         <app-lists [data]="listData"></app-lists>
@@ -40,6 +41,7 @@
   <div class="r-item">
     <div class="r-item-title">
       <h5>独家放送</h5>
+      <div class="r-item-title-more"><a href="" class="text-right"><span>更多>></span></a></div>      
     </div>
     <div class="r-item-body">
         <app-v-list [data]="videoData"></app-v-list>
@@ -48,6 +50,7 @@
   <div class="r-item">
     <div class="r-item-title">
       <h5>最新音乐</h5>
+      <div class="r-item-title-more"><a href="" class="text-right"><span>更多>></span></a></div>      
     </div>
     <div class="r-item-body t-body">
       <div class="col-md-6 l-list">
@@ -77,6 +80,7 @@
   <div class="r-item">
     <div class="r-item-title">
       <h5>推荐MV</h5>
+      <div class="r-item-title-more"><a href="" class="text-right"><span>更多>></span></a></div>      
     </div>
     <div class="r-item-body">
         <app-v-list [data]="videoData"></app-v-list>
@@ -85,6 +89,7 @@
   <div class="r-item">
     <div class="r-item-title">
       <h5>主播电台</h5>
+      <div class="r-item-title-more"><a routerLink="/discover/radio" class="text-right"><span>更多>></span></a></div>      
     </div>
     <div class="r-item-body">
       <div class="col-md-6">

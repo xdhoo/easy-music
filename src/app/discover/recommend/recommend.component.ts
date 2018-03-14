@@ -12,7 +12,7 @@ export class RecommendComponent implements OnInit {
     {
       id:1,
       title:'采样的魅力',
-      url:'http://placehold.it/180x180',
+      url:'assets/images/m-list/1.jpg',
       userName:'Aric',
       createDate:'2017-01-12',
       listener:230,
@@ -41,7 +41,7 @@ export class RecommendComponent implements OnInit {
     },{
       id:2,
       title:'采样的魅力',
-      url:'http://placehold.it/180x180',
+      url:'assets/images/m-list/2.jpg',
       userName:'Aric',
       createDate:'2017-01-12',
       listener:230,
@@ -70,7 +70,7 @@ export class RecommendComponent implements OnInit {
     },{
       id:3,
       title:'采样的魅力',
-      url:'http://placehold.it/180x180',
+      url:'assets/images/m-list/3.jpg',
       userName:'Aric',
       createDate:'2017-01-12',
       listener:230,
@@ -99,7 +99,7 @@ export class RecommendComponent implements OnInit {
     },{
       id:4,
       title:'采样的魅力',
-      url:'http://placehold.it/180x180',
+      url:'assets/images/m-list/4.jpg',
       userName:'Aric',
       createDate:'2017-01-12',
       listener:230,
