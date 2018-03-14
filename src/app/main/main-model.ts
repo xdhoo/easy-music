@@ -26,6 +26,7 @@ export class ListData {
 export class MusicData {
     id:number;
     micName:string;
+    src:string;
     singer:string;
     album:string;
     time:string;
@@ -42,4 +43,13 @@ export class RankData {
     rankName:string;
     rankImg:string;
     musiclist:Array<MusicData>;
+}
+
+/*播放数据*/
+export class PlayData {
+    Index:number;
+    IsPlaying:boolean;
+    Style:number;
+    Current:number;
+    Data:number;
 }

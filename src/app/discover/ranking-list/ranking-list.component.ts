@@ -17,30 +17,35 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'惊叹号',
           singer:'周杰伦',
+          src:'',
           album:'摩杰座',
           time:'2011-01-18'
         }, {
           id:2,
           micName:'如常',
           singer:'房东的猫',
+          src:'',
           album:'如常',
           time:'2011-01-18'
         }, {
           id:3,
           micName:'慢慢喜欢你',
           singer:'莫文蔚',
+          src:'',
           album:'如常',
           time:'2011-01-18'
         },{
           id:4,
           micName:'慢慢喜欢你',
           singer:'莫文蔚',
+          src:'',
           album:'如常',
           time:'2011-01-18'
         },{
           id:5,
           micName:'慢慢喜欢你',
           singer:'莫文蔚',
+          src:'',
           album:'如常',
           time:'2011-01-18'
         }
@@ -53,6 +58,7 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'惊叹号',
           singer:'周杰伦',
+          src:'',
           album:'摩杰座',
           time:'2011-01-18'
         }
@@ -65,6 +71,7 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'惊叹号',
           singer:'周杰伦',
+          src:'',
           album:'摩杰座',
           time:'2011-01-18'
         }
@@ -86,18 +93,21 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }
@@ -115,18 +125,21 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }
@@ -144,18 +157,21 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }
@@ -173,18 +189,21 @@ export class RankingListComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }

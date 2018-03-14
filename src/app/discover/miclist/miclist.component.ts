@@ -69,18 +69,21 @@ export class MiclistComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }
@@ -98,18 +101,21 @@ export class MiclistComponent implements OnInit {
           id:1,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:2,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         },{
           id:3,
           micName:'Chill Bill',
           singer:'the ShowBoys',
+          src:'',
           album:'Chill Bill',
           time:'04:22'
         }

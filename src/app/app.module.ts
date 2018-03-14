@@ -13,6 +13,7 @@ import { FmComponent } from './fm/fm.component';
 import { VideoComponent } from './video/video.component';
 import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
+import { FooterService } from './main/footer/footer.service';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { NavModule } from './main/nav/nav.module';
     AppRoutingModule,
     NavModule
   ],
-  providers: [],
+  providers: [FooterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

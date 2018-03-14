@@ -15,29 +15,28 @@
     <i class="fa fa-volume-up"></i>
   </div> -->
   <div class="f_ctrl">
-      <audio id="audio" src="http://112.17.14.28/cache/qqma.tingge123.com:83/20081123/%E7%94%9C%E8%9C%9C%E8%9C%9C.mp3?ich_args2=381-14180512040764_e4dfdf18929b97484d00d66de86aa399_10001002_9c89662dd7c1f0d8933a518939a83798_5060881fa5fe5a9dcc1db3c33956c5fb" type="audio/mpeg">你的浏览器不支持</audio>
-      <div class="left_ctrl">
-        <div class="f_detail_ctrl">
-          <i class="playPrev fa fa-step-backward fa-2x" title="上一曲 ctrl + left"></i>
-          <i class="fa fa-play-circle-o fa-2x"   title="播放/暂停 ctrl + space" (click)="onplay()"></i>
-          <i class="playNext fa fa-step-forward fa-2x" title="下一曲 ctrl + right"></i>
-        </div>
-        <div class="f_progress" id="f_progress">
-          <div class="f_current_detail">
-            <span class="f_c_name"></span>
-            <span class="f_c_time"></span>
-          </div>
-          <div class="f_progress_bar" id="f_progress">
-            <div class="duration" id="f_progressD">
-              <div class="buffering" ></div>
-              <div class="real" ></div>
-            </div>
-            <div class="range" ></div>
-          </div>
-        </div>
+    <div class="left_ctrl">
+      <div class="f_detail_ctrl">
+        <i class="playPrev fa fa-step-backward fa-2x" title="上一曲 ctrl + left"></i>
+        <i class="fa fa-play-circle-o fa-2x"   title="播放/暂停 ctrl + space" (click)="onplay()"></i>
+        <i class="playNext fa fa-step-forward fa-2x" title="下一曲 ctrl + right"></i>
       </div>
-      <div class="right_ctrl">
-        <span class="play_type" ></span>
+      <div class="f_progress" id="f_progress">
+        <div class="f_current_detail">
+          <span class="f_c_name"></span>
+          <span class="f_c_time"></span>
+        </div>
+        <div class="f_progress_bar" id="f_progress">
+          <div class="duration" id="f_progressD">
+            <div class="buffering" ></div>
+            <div class="real" ></div>
+          </div>
+          <div class="range" ></div>
+        </div>
       </div>
     </div>
+    <div class="right_ctrl">
+      <span class="play_type" ></span>
+    </div>
+  </div>
 </div>
