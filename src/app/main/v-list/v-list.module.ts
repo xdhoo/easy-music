@@ -7,7 +7,8 @@ import { VListComponent } from './v-list.component';
 
 @NgModule({
     imports:[
-        CommonModule
+        CommonModule,
+        RouterModule
     ],
     declarations:[
         VListComponent

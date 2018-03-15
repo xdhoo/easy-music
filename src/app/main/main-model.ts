@@ -55,3 +55,10 @@ export class PlayData {
     Data:number;
     percent?:any;
 }
+/* 视频数据 */
+export class VideoData {
+    id:number;
+    url:string;
+    content:string;
+    src:string;
+}

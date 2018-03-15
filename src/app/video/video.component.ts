@@ -11,10 +11,10 @@ export class VideoComponent implements OnInit {
   navData:Array<NavData> = [
     {
       navName:'视频',
-      navUrl:'/video'
+      navUrl:'/video/videos'
     },{
       navName:'MV',
-      navUrl:'/video/mv'
+      navUrl:'/videos/mv'
     }
   ];
   constructor() { }

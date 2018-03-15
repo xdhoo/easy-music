@@ -15,6 +15,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
 import { FooterService } from './main/footer/footer.service';
 import { TimePipe } from './main/time.pipe';
+import { VideoModule } from './video/video.module';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { TimePipe } from './main/time.pipe';
     CommonModule,
     BrowserModule,
     DiscoverModule,
+    VideoModule,
     AppRoutingModule,
     NavModule
   ],

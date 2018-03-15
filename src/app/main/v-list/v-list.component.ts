@@ -8,7 +8,7 @@ import { ListData } from '../main-model';
     <ul class="list-inline">
       <li *ngFor="let item of data">
         <div class="c-list-img">
-          <a href="">
+          <a routerLink="/video/videos/{{item.id}}">
             <img [src]=item.url alt="">
           </a>
           <div class="c-list-top">
