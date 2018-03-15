@@ -14,10 +14,11 @@ import { VideoComponent } from './video/video.component';
 import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
 import { FooterService } from './main/footer/footer.service';
+import { TimePipe } from './main/time.pipe';
 
 
 @NgModule({
-  declarations: [
+  declarations: [    
     AppComponent,
     SidebarComponent,
     HeaderComponent,
@@ -26,6 +27,7 @@ import { FooterService } from './main/footer/footer.service';
     FmComponent,
     VideoComponent,
     FriendsComponent,
+    TimePipe    
     
   ],
   imports: [

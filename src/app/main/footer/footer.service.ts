@@ -8,26 +8,37 @@ export class FooterService {
   private playData:PlayData = {
     Index:0,
     IsPlaying:false,
+    MicName:'',
     Style:1,
-    Current:1,
-    Data:1,
+    Current:0,
+    Data:0,
   }
   private playList:MusicData[] = [];
+  private listenInterval;
   constructor(){
     this._audio = document.createElement('audio');
     this._audio.autoplay = false;
     this._audio.onplay = () => {
-
+      
+      let that = this;
+      this.listenInterval = window.setInterval(() => {
+        that.playData.Current = that._audio.currentTime;
+        that.playData.Data = that._audio.duration;
+        that.playData.percent = (that.playData.Current / that.playData.Data)*100 +'%';
+      },1000);
+      this.playData.IsPlaying = true;
     };
     this._audio.onended = () => {
-
-    };
-    this._audio.onabort = () => {
-
+      window.clearInterval(this.listenInterval);
+      this.FillPlayData();
+      this.playData.IsPlaying = false;
     };
     this._audio.onpause = () => {
-
+      window.clearInterval(this.listenInterval);
+      this.playData.Current = this._audio.currentTime;
+      this.playData.IsPlaying = false;
     }
+
   }
 
   public Toogle(audio?:MusicData):void{
@@ -54,6 +65,7 @@ export class FooterService {
     this.playList.push(audio);
     if(this.playList.length === 1){
       this.PlayIndex(0);
+      this.playData.MicName = audio.micName;
     }
   }
 
@@ -119,8 +131,12 @@ export class FooterService {
   }  
 
   public Skip(percent:number):void {
-    this._audio.currentTime =this._audio.duration*percent;
-    this.playData.Current = this._audio.currentTime;
+    if(this._audio.duration){
+      this._audio.currentTime =this._audio.duration*percent;
+      this.playData.Current = this._audio.currentTime;
+      this.playData.percent = percent*100 + '%';
+    }
+    
   };
 
   public PlayList():MusicData[] {
@@ -133,6 +149,7 @@ export class FooterService {
 
   public FillPlayData(): void {
     this.playData.Current = this._audio.duration;
+    this.playData.percent = 100 + '%';
     this.playData.Data = this._audio.duration;
   }
   private PlayIndex(index: number): void {

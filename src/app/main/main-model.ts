@@ -49,7 +49,9 @@ export class RankData {
 export class PlayData {
     Index:number;
     IsPlaying:boolean;
+    MicName:string;
     Style:number;
     Current:number;
     Data:number;
+    percent?:any;
 }
