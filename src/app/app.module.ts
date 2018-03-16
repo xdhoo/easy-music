@@ -16,8 +16,8 @@ import { VideoComponent } from './video/video.component';
 import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
 import { FooterService } from './main/footer/footer.service';
-import { TimePipe } from './main/time.pipe';
 import { VideoModule } from './video/video.module';
+import { TimePipe } from './pipes/time.pipe';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { VideoModule } from './video/video.module';
     FmComponent,
     VideoComponent,
     FriendsComponent,
-    TimePipe    
+    TimePipe, 
     
   ],
   imports: [

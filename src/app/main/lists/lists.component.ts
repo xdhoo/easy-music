@@ -8,15 +8,15 @@ import { ListData } from '../main-model';
     <ul class="list-inline">
       <li *ngFor="let item of data">
         <div class="c-list-img">
-          <a routerLink="/discover/recommend/{{item.id}}">
-            <img [src]=item.url alt="">
+          <a routerLink="/discover/{{item.id}}">
+            <img [src]=item.src alt="">
           </a>
           <div class="c-list-bottom">
-            <span><i class="fa fa-music"></i> {{item.listener}}万</span>
+            <span><i class="fa fa-music"></i> {{item.times}}</span>
             <a href=""><i class="fa fa-play-circle-o"></i></a>            
           </div>
         </div>      
-        <p>{{item.title}}</p>
+        <p>{{item.title | titleFormat}}</p>
       </li>
     </ul>
   </div>

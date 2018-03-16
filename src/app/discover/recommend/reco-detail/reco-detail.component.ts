@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params} from '@angular/router';
 
 @Component({
   selector: 'app-reco-detail',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecoDetailComponent implements OnInit {
 
-  constructor() { }
+  listId:string;
+
+  constructor( private route:ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(data => {
+      this.listId = data.id;
+    });
+
+    
   }
 
 }

@@ -16,7 +16,7 @@ const discoverRoutes:Routes = [
         children: [
             { path: '',redirectTo:'recommend',pathMatch:'full'},
             { path: 'recommend', component:RecommendComponent},
-            { path: 'recommend/:id', component:RecoDetailComponent},
+            // { path: ':id', component:RecoDetailComponent},
             { path: 'miclist', component:MiclistComponent},
             { path: 'singer', component:SingerComponent},
             { path: 'rank' , component:RankingListComponent},

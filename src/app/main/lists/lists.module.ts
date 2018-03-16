@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { RouterModule, Routes} from '@angular/router';
 import { ListsComponent } from './lists.component';
+import { TitleFormatPipe } from '../../pipes/title-format.pipe';
 
 @NgModule({
     imports:[
@@ -9,7 +10,9 @@ import { ListsComponent } from './lists.component';
         CommonModule
     ],
     declarations:[
-        ListsComponent
+        ListsComponent,
+        TitleFormatPipe    
+
     ],
     exports:[
         ListsComponent
