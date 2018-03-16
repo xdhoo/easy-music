@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule }  from '@angular/common';
+import { JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
@@ -37,7 +39,9 @@ import { VideoModule } from './video/video.module';
     DiscoverModule,
     VideoModule,
     AppRoutingModule,
-    NavModule
+    NavModule,
+    HttpClientModule,
+    JsonpModule
   ],
   providers: [FooterService],
   bootstrap: [AppComponent]

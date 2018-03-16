@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ListData } from '../../main/main-model';
+import { HttpClient } from '@angular/common/http';
+import { Jsonp } from '@angular/http'
 
 @Component({
   selector: 'app-recommend',
@@ -240,9 +242,28 @@ export class RecommendComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(private http:HttpClient,private jsonp:Jsonp) { }
 
   ngOnInit() {
+
+
+  }
+
+  ontest(){
+    this.http.get(`/api/discover/toplist?id=33779629`).subscribe(data =>{
+      console.log(data);
+    })
+    // this.http.jsonp('http://music.163.com/discover/toplist?id=3779629',"1").subscribe(data =>{
+    // console.log(data);
+    // })
+    // var params = new URLSearchParams();
+    // params.set("callback","__ng_jsonp__.__req0.finished");
+    // this.jsonp.get('http://music.163.com/discover/toplist?id=3779629&callback=__ng_jsonp__.__req5.finished').subscribe(data =>{
+    //   var pattern = /<textarea style="display:none;">(.*?)<\/textarea>/
+    //   console.log(data);
+    //   //var reslut =  pattern.exec(data)
+    //   //console.log(reslut[1])
+    // })
   }
 
 }

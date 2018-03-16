@@ -14,6 +14,7 @@ import { ListsModule } from '../main/lists/lists.module';
 import { VListModule } from '../main/v-list/v-list.module';
 import { TagsModule } from '../main/tags/tags.module';
 import { RankModule } from '../main/rank/rank.module';
+import { HttpClientJsonpModule } from '@angular/common/http';
 
 @NgModule({
     imports: [
@@ -23,7 +24,8 @@ import { RankModule } from '../main/rank/rank.module';
         TagsModule,
         ListsModule,
         VListModule,
-        RankModule
+        RankModule,
+        HttpClientJsonpModule
     ],
     declarations: [
         RecommendComponent,

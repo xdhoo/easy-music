@@ -64,7 +64,7 @@ export class FooterComponent implements OnInit {
     this.audio.Add({id:2,
       micName:'Chill Bill',
       singer:'the ShowBoys',
-      src:'assets/audio/1.mp3',
+      src:'http://m10.music.126.net/20180316181035/ea29e4d45b9aeb6accdc3a271c937406/ymusic/d357/5dc0/794f/a52fc391e02c0b402595174e5c98d8c5.mp3',
       album:'Chill Bill',
       time:'04:22'})
   };
