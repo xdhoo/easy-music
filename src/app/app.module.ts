@@ -17,7 +17,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
 import { FooterService } from './main/footer/footer.service';
 import { VideoModule } from './video/video.module';
-import { TimePipe } from './pipes/time.pipe';
+import { PipesModule } from './pipes/pipes.module';
 
 
 @NgModule({
@@ -30,7 +30,6 @@ import { TimePipe } from './pipes/time.pipe';
     FmComponent,
     VideoComponent,
     FriendsComponent,
-    TimePipe, 
     
   ],
   imports: [
@@ -41,9 +40,11 @@ import { TimePipe } from './pipes/time.pipe';
     AppRoutingModule,
     NavModule,
     HttpClientModule,
-    JsonpModule
+    JsonpModule,
+    PipesModule
   ],
   providers: [FooterService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[]
 })
 export class AppModule { }

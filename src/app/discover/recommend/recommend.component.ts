@@ -118,8 +118,9 @@ export class RecommendComponent implements OnInit {
   ngOnInit() {
 
     this.http.get('assets/json/playlist.json').toPromise().then(data => {
-      let playlists = data;
-      this.playlist = this.playlists.filter((value,index) =>{
+      let _playlists ;
+      _playlists= data;
+      this.playlist = _playlists.filter((value,index) =>{
         if(index < 8){
           return value;
         }else {

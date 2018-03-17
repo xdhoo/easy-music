@@ -15,6 +15,8 @@ import { VListModule } from '../main/v-list/v-list.module';
 import { TagsModule } from '../main/tags/tags.module';
 import { RankModule } from '../main/rank/rank.module';
 import { HttpClientJsonpModule } from '@angular/common/http';
+import { PipesModule } from '../pipes/pipes.module';
+import { MListModule } from '../main/m-list/m-list.module';
 
 @NgModule({
     imports: [
@@ -25,7 +27,9 @@ import { HttpClientJsonpModule } from '@angular/common/http';
         ListsModule,
         VListModule,
         RankModule,
-        HttpClientJsonpModule
+        HttpClientJsonpModule,
+        PipesModule,
+        MListModule
     ],
     declarations: [
         RecommendComponent,
@@ -35,7 +39,7 @@ import { HttpClientJsonpModule } from '@angular/common/http';
         SingerComponent,
         LatestMicComponent,
         RecoDetailComponent,
-        SMenuComponent
+        SMenuComponent,
     ],
 })
 

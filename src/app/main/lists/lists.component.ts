@@ -16,7 +16,7 @@ import { ListData } from '../main-model';
             <a href=""><i class="fa fa-play-circle-o"></i></a>            
           </div>
         </div>      
-        <p>{{item.title | titleFormat}}</p>
+        <p>{{item.title | titleFormat:13}}</p>
       </li>
     </ul>
   </div>

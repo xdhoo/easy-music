@@ -4,12 +4,12 @@ import { DiscoverComponent } from './discover/discover.component';
 import { VideoComponent } from './video/video.component';
 import { FmComponent } from './fm/fm.component';
 import { FriendsComponent } from './friends/friends.component';
-import { RecoDetailComponent } from './discover/recommend/reco-detail/reco-detail.component';
+import { MListComponent } from './main/m-list/m-list.component';
 
 const routes:Routes = [
     { path: '', redirectTo: '/discover/recommend', pathMatch: 'full'},
     { path: 'discover', component: DiscoverComponent},
-    { path: 'discover/:id',component:RecoDetailComponent},
+    { path: 'discover/:id',component:MListComponent},
     { path: 'video', component: VideoComponent},
     { path: 'fm', component: FmComponent},
     { path: 'friends', component: FriendsComponent}
@@ -17,6 +17,7 @@ const routes:Routes = [
 
 @NgModule({
     imports:[
+        //MListModule,
         RouterModule.forRoot(routes)
     ],
     exports: [

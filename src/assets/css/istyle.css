@@ -9,6 +9,9 @@ a:hover{
 li{
     list-style: none;
 }
+.tx-red{
+    color: #B30B0B 
+}
 .c-tags{
     padding-top: 10px;
 }
@@ -94,8 +97,40 @@ li{
     padding-left: 5px;
 }
 .rk-content ol li:hover{
-    background-color: rgba(117, 116, 116, 0.46)
+    background-color: rgba(134, 132, 132, 0.21);
 }
 .rk-content ol li:nth-child(odd){
-    background-color: rgba(172, 172, 172, 0.13);
+    background-color: rgba(117, 116, 116, 0.13);
+}
+.rk-more{
+    height: 40px;
+    padding: 10px;
+}
+.rk-ol li span.rk-ord{
+    font-size: 16px;
+    padding: 0px 3px;
+}
+/* m-list-con*/
+.m-list-con{
+    padding-top: 10px;
+    color: #C2BEBE;
+    min-width: 900px;
+    width:70%;
+    margin: auto;
+}
+.m-list-con-t{
+    height: 200px;
+}
+.cont-l{
+    float: left
+}
+.cont-r{
+   margin-left: 220px;
+}
+.m-list-con-b {
+    padding-top:30px; 
+}
+.m-list-con-b table th,.m-list-con-b table td{
+    text-align: center;
+    border-top: 1px solid #454545 !important;
 }

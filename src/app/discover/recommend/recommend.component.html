@@ -32,12 +32,11 @@
   <div class="r-item">
     <div class="r-item-title">
       <h5>推荐歌单 </h5>
-      <div class="r-item-title-more"><a href="" class="text-right"><span>更多>></span></a></div>
+      <div class="r-item-title-more"><a routerLink="/discover/miclist" class="text-right"><span>更多>></span></a></div>
     </div>
     <div class="r-item-body">
         <app-lists [data]="playlist"></app-lists>
     </div>
-    <button (click)="ontest()">test</button>
   </div>
   <div class="r-item">
     <div class="r-item-title">
