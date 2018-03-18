@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { JsonpModule } from '@angular/http';
+import { FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
@@ -15,9 +16,11 @@ import { FmComponent } from './fm/fm.component';
 import { VideoComponent } from './video/video.component';
 import { FriendsComponent } from './friends/friends.component';
 import { NavModule } from './main/nav/nav.module';
-import { FooterService } from './main/footer/footer.service';
 import { VideoModule } from './video/video.module';
 import { PipesModule } from './pipes/pipes.module';
+import { AudioService } from './service/audio.service';
+import { SListComponent } from './main/s-list/s-list.component';
+import { GetDataService } from './service/get-data.service';
 
 
 @NgModule({
@@ -30,10 +33,12 @@ import { PipesModule } from './pipes/pipes.module';
     FmComponent,
     VideoComponent,
     FriendsComponent,
+    SListComponent,
     
   ],
   imports: [
     CommonModule,
+    FormsModule,
     BrowserModule,
     DiscoverModule,
     VideoModule,
@@ -41,9 +46,9 @@ import { PipesModule } from './pipes/pipes.module';
     NavModule,
     HttpClientModule,
     JsonpModule,
-    PipesModule
+    PipesModule,
   ],
-  providers: [FooterService],
+  providers: [AudioService,GetDataService],
   bootstrap: [AppComponent],
   entryComponents:[]
 })

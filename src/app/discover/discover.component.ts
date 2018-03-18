@@ -24,10 +24,11 @@ export class DiscoverComponent implements OnInit {
     },{
       navName:'歌手',
       navUrl:'/discover/singer'
-    },{
-      navName:'最新音乐',
-      navUrl:'/discover/latestmic'
     }
+    // ,{
+    //   navName:'最新音乐',
+    //   navUrl:'/discover/latestmic'
+    // }
   ]
 
   constructor() { }

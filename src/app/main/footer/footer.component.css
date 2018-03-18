@@ -10,6 +10,10 @@
 .f-content a:hover{
     color: #ffffff
 }
+.left_ctrl{
+    float: left;
+    width:93%;
+}
 .f_detail_ctrl{
     float: left;
 }
@@ -92,4 +96,11 @@
     position:absolute;
     top:0;
     left:0;
+}
+.right_ctrl{
+    font-size: 22px;
+    color: rgb(156, 154, 154);
+}
+.right_ctrl i:hover{
+    color: #D1CFCF;
 }

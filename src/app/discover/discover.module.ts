@@ -16,7 +16,6 @@ import { TagsModule } from '../main/tags/tags.module';
 import { RankModule } from '../main/rank/rank.module';
 import { HttpClientJsonpModule } from '@angular/common/http';
 import { PipesModule } from '../pipes/pipes.module';
-import { MListModule } from '../main/m-list/m-list.module';
 
 @NgModule({
     imports: [
@@ -28,8 +27,7 @@ import { MListModule } from '../main/m-list/m-list.module';
         VListModule,
         RankModule,
         HttpClientJsonpModule,
-        PipesModule,
-        MListModule
+        PipesModule
     ],
     declarations: [
         RecommendComponent,

@@ -1,29 +1,14 @@
 <div class="f-content">
-  <!-- <div class="col-md-2 text-right">
-    <a href=""><i class="fa fa-step-backward fa-2x"></i></a>
-    <a href=""><i class="fa fa-play-circle-o fa-2x"></i></a>
-    <a href=""><i class="fa fa-step-forward fa-2x"></i></a>
-  </div>
-  <div class="col-md-8">
-    <audio controls="controls" height="100" width="100">
-        <source src="song.mp3" type="audio/mp3" />
-        <source src="song.ogg" type="audio/ogg" />
-      <embed height="100" width="100" src="song.mp3" />
-    </audio>
-  </div>
-  <div class="col-md-2">
-    <i class="fa fa-volume-up"></i>
-  </div> -->
   <div class="f_ctrl">
     <div class="left_ctrl">
       <div class="f_detail_ctrl">
         <i class="playPrev fa fa-step-backward fa-2x" title="上一曲 ctrl + left" (click)="onPrev()"></i>
-        <i class="fa  fa-2x" [ngClass]="{'fa-pause-circle-o':playData.IsPlaying,'fa-play-circle-o':!playData.IsPlaying}"  title="播放/暂停 ctrl + space" (click)="onplay()"></i>
+        <i class="fa fa-2x" [ngClass]="{'fa-pause-circle-o':playData.IsPlaying,'fa-play-circle-o':!playData.IsPlaying}"  title="播放/暂停 ctrl + space" (click)="onplay()"></i>
         <i class="playNext fa fa-step-forward fa-2x" title="下一曲 ctrl + right" (click)="onNext()"></i>
       </div>
       <div class="f_progress" id="f_progress">
         <div class="f_current_detail">
-          <span class="f_c_name">{{playData.MicName}}</span>
+          <span class="f_c_name"> {{playData.MicName}} -  {{playData.artist}}</span>
           <span class="f_c_time">{{playData.Current | iTime}}/{{playData.Data | iTime}}</span>
         </div>
         <div class="f_progress_bar" id="f_progress">
@@ -37,6 +22,9 @@
     </div>
     <div class="right_ctrl">
       <span class="play_type" ></span>
+    </div>
+    <div class="right_ctrl">
+      <span class="play_type" title="打开播放列表"><i class="fa fa-list"></i></span>
     </div>
   </div>
 </div>

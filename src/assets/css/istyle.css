@@ -119,7 +119,7 @@ li{
     margin: auto;
 }
 .m-list-con-t{
-    height: 200px;
+    height: 180px;
 }
 .cont-l{
     float: left
@@ -133,4 +133,14 @@ li{
 .m-list-con-b table th,.m-list-con-b table td{
     text-align: center;
     border-top: 1px solid #454545 !important;
+}
+
+.m-list-table tr:nth-child(even){
+    background-color: rgba(8, 8, 8, 0.09)
+}
+.m-list-table tr:hover{
+    background-color: rgba(139, 134, 134, 0.31)
+}
+.m-list-table thead tr{
+    background-color: rgba(138, 138, 138, 0.44)
 }

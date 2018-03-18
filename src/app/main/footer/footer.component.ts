@@ -1,34 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterService } from './footer.service';
 import { PlayData } from '../main-model';
+import { AudioService } from '../../service/audio.service';
+import { validateConfig } from '../../../../node_modules/_@angular_router@5.2.9@@angular/router/src/config';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'],
-  providers:[FooterService]
+  styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
 
   private _left;
   private _width;
   private _rStart;
-  playData:PlayData = {
-    Index:0,
-    IsPlaying:false,
-    MicName:'',
-    Style:1,
-    Current:0,
-    Data:0,
-  };
+  playData;
 
   flag:boolean;
   percent;
 
-  constructor(public audio:FooterService) {
+  constructor(public audio:AudioService) {
   }
 
   ngOnInit() {
+
+    this.audio.cast.subscribe(
+      {
+        next:value =>{this.playData = value}
+      }
+    )
     this._left = $('#f_progressD').offset().left;
     this._width = $('#f_progressD').width();
     this.flag = false;
@@ -59,14 +58,11 @@ export class FooterComponent implements OnInit {
 
   onplay(){
     this.audio.Toogle();
-    this.playData = this.audio.PlayData();
-    
-    this.audio.Add({id:2,
-      micName:'Chill Bill',
-      singer:'the ShowBoys',
-      src:'http://m10.music.126.net/20180316181035/ea29e4d45b9aeb6accdc3a271c937406/ymusic/d357/5dc0/794f/a52fc391e02c0b402595174e5c98d8c5.mp3',
-      album:'Chill Bill',
-      time:'04:22'})
+    this.audio.cast.subscribe(
+      {
+        next:value =>{this.playData = value}
+      }
+    )
   };
 
   onNext(){

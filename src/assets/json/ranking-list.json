@@ -2,8 +2,8 @@
     {
         "id":19723756,
         "src":"http://p1.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=280y120",
-        "title":"飙升榜",
-        "list":[
+        "title":"云音乐飙升榜",
+        "tracks":[
             {
                 "type":0,
                 "duration":221022,
@@ -6258,8 +6258,8 @@
     },{
         "id":3779629,
         "src":"http://p1.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=280y120",
-        "title":"新歌榜",
-        "list":[
+        "title":"云音乐新歌榜",
+        "tracks":[
             {
                 "fee":0,
                 "ftype":0,
@@ -12845,7 +12845,7 @@
         "id":2884035,
         "src":"http://p1.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=280y120",
         "title":"原创榜",
-        "list":[
+        "tracks":[
             {
                 "fee":0,
                 "ftype":0,
@@ -19040,51 +19040,51 @@
         "id":1978921795,
         "src":"http://p1.music.126.net/5tgOCD4jiPKBGt7znJl-2g==/18822539557941307.jpg?param=180y180",
         "title":"电音榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":991319590,
         "src":"http://p1.music.126.net/RChr5NydlXafIV1GVEHJdg==/19073228207465342.jpg?param=180y180",
         "title":"嘻哈榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":71384707,
         "src":"http://p1.music.126.net/BzSxoj6O1LQPlFceDn-LKw==/18681802069355169.jpg?param=180y180",
         "title":"云音乐古典音乐榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":2023401535,
         "src":"http://p1.music.126.net/0_6_Efe9m0D0NtghOxinUg==/109951163089272193.jpg?param=180y180",
         "title":"英国Q杂志中文版周榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":3812895,
         "src":"http://p1.music.126.net/A61n94BjWAb-ql4xpwpYcg==/18613632348448741.jpg?param=180y180",
         "title":"Beatport全球电子舞曲榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":60198,
         "src":"http://p1.music.126.net/EBRqPmY8k8qyVHyF8AyjdQ==/18641120139148117.jpg?param=180y180",
         "title":"美国Billboard周榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":1899724,
         "src":"http://p1.music.126.net/_nwkQTFtOdAjFvOI8Wg7Tg==/18922595114302109.jpg?param=180y180",
         "title":"中国嘻哈榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":11641012,
         "src":"http://p1.music.126.net/83pU_bx5Cz0NlcTq-P3R3g==/18588343581028558.jpg?param=180y180",
         "title":"iTunes榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":27135204,
         "src":"http://p1.music.126.net/6O0ZEnO-I_RADBylVypprg==/109951162873641556.jpg?param=180y180",
         "title":"法国 NRJ Vos Hits 周榜",
-        "list":[]
+        "tracks":[]
     },{
         "id":180106,
         "src":"http://p1.music.126.net/VQOMRRix9_omZbg4t-pVpw==/18930291695438269.jpg?param=180y180",
         "title":"UK排行榜周榜",
-        "list":[]
+        "tracks":[]
     }
 ]

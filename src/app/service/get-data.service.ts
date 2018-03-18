@@ -32,7 +32,7 @@ export class GetDataService {
   };
 
   public getRanklist(id){
-    this.http.get('assets/json/ranking-list.json')
+    return this.http.get('assets/json/ranking-list.json')
       .toPromise()
       .then(data => {
         let _ranllist;

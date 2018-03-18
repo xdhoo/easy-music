@@ -4,12 +4,12 @@ import { DiscoverComponent } from './discover/discover.component';
 import { VideoComponent } from './video/video.component';
 import { FmComponent } from './fm/fm.component';
 import { FriendsComponent } from './friends/friends.component';
-import { MListComponent } from './main/m-list/m-list.component';
+import { SListComponent } from './main/s-list/s-list.component';
 
 const routes:Routes = [
     { path: '', redirectTo: '/discover/recommend', pathMatch: 'full'},
     { path: 'discover', component: DiscoverComponent},
-    { path: 'discover/:id',component:MListComponent},
+    { path: 'playlist',component:SListComponent},
     { path: 'video', component: VideoComponent},
     { path: 'fm', component: FmComponent},
     { path: 'friends', component: FriendsComponent}

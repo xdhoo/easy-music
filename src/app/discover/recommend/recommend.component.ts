@@ -136,12 +136,13 @@ export class RecommendComponent implements OnInit {
   }
 
   ontest(){
-    this.http.get(`/api/discover/toplist?id=33779629`).subscribe(data =>{
-      console.log(data);
-    })
-    // this.http.jsonp('http://music.163.com/discover/toplist?id=3779629',"1").subscribe(data =>{
-    // console.log(data);
+    let url ='http://music.163.com/api/v3/song/detail?id=418603077&c=[{"id":"418603077"}]'
+    // this.http.post(url,{}).subscribe(data =>{
+    //   console.log(data);
     // })
+    this.http.jsonp(url,'__ng_jsonp__.__req0.finished').subscribe(data =>{
+    console.log(data);
+    })
     // var params = new URLSearchParams();
     // params.set("callback","__ng_jsonp__.__req0.finished");
     // this.jsonp.get('http://music.163.com/discover/toplist?id=3779629&callback=__ng_jsonp__.__req5.finished').subscribe(data =>{
