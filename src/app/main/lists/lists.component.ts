@@ -8,7 +8,7 @@ import { ListData } from '../main-model';
     <ul class="list-inline">
       <li *ngFor="let item of data">
         <div class="c-list-img">
-          <a [routerLink]="['/playlist']" [queryParams]="{id:item.id,type:2}">
+          <a [routerLink]="['/playlist']" [queryParams]="{id:item.id,type:2,ltype:item.title}">
             <img [src]=item.src alt="">
           </a>
           <div class="c-list-bottom">
@@ -24,12 +24,11 @@ import { ListData } from '../main-model';
 })
 export class ListsComponent implements OnInit {
 
-  @Input() data:ListData
+  @Input() data;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.data);
   }
 
 }

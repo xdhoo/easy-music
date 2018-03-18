@@ -41,4 +41,21 @@ export class GetDataService {
       })
       .catch()
   }
+
+  public getSingerlists(){
+    return this.http.get('assets/json/artists.json')
+      .toPromise()
+      .then(res => res)
+      .catch()
+  }
+  public getSingerlist(id){
+    return this.http.get('assets/json/artists.json')
+      .toPromise()
+      .then(data => {
+        let _sinlist;
+        _sinlist = data;
+        return _sinlist.find(value => value.id == id);
+      })
+      .catch()
+  }
 }

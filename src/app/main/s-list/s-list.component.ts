@@ -11,6 +11,7 @@ export class SListComponent implements OnInit {
 
   listId:any;
   type:any;
+  ltype:any;
   listData = { };
   constructor(
     private route:ActivatedRoute,
@@ -23,6 +24,7 @@ export class SListComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.listId = params.id;
       this.type = params.type;
+      this.ltype =params.ltype;
     });
     if(this.type == 1){
       this.getdata.getRanklist(this.listId)
@@ -31,11 +33,20 @@ export class SListComponent implements OnInit {
       })
       .catch()
     }else{
-      this.getdata.getPlayList(this.listId)
-      .then(res => {
-        this.listData = res.result;
-      })
-      .catch()
+      if(this.ltype){
+        this.getdata.getPlayList(this.listId)
+        .then(res => {
+          this.listData = res.result;
+        })
+        .catch()
+      }else{
+        this.getdata.getSingerlist(this.listId)
+        .then(res => {
+          this.listData = res.list;
+        })
+        .catch()
+      }
+      
     }    
   }
   onPlay(list){
