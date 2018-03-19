@@ -136,11 +136,14 @@ li{
 }
 
 .m-list-table tr:nth-child(even){
-    background-color: rgba(8, 8, 8, 0.09)
+    background-color: rgba(8, 8, 8, 0.09);
+    height: 41px;
 }
 .m-list-table tr:hover{
-    background-color: rgba(139, 134, 134, 0.31)
+    background-color: rgba(139, 134, 134, 0.31);
+    color: #FFFFFF;
 }
 .m-list-table thead tr{
-    background-color: rgba(138, 138, 138, 0.44)
+    background-color: rgba(138, 138, 138, 0.44);
+    
 }

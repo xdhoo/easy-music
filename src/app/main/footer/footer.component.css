@@ -1,7 +1,7 @@
 .f-content{
     width:800px;
     margin: auto;
-    padding: 10px
+    padding: 10px;
 }
 .f-content a{
     margin-right: 10px;
@@ -103,4 +103,30 @@
 }
 .right_ctrl i:hover{
     color: #D1CFCF;
+}
+.imodal{
+    position: fixed;
+    bottom: 50px;
+    right: 15%;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.imodal .modal-dialog{
+    margin: 0px auto;
+}
+.modal-content{
+    background-color: #404040;
+}
+.itable td{
+    border-top: none;
+    padding-left: 20px;
+}
+.itable tr:nth-child(even){
+    background-color: rgba(105, 97, 97, 0.3607843137254902);
+}
+.itable tr:hover{
+    background-color: rgba(154, 150, 150, 0.3607843137254902);
 }

@@ -7,6 +7,7 @@ import { Subject } from 'rxjs/Subject';
 export class AudioService {
 
   private _audio: HTMLAudioElement;
+  private _isExist;
   private playData = {
     Index:0,
     IsPlaying:false,
@@ -40,6 +41,7 @@ export class AudioService {
       window.clearInterval(this.listenInterval);
       this.FillPlayData();
       this.playData.IsPlaying = false;
+      this.Next();      
     };
     this._audio.onpause = () => {
       window.clearInterval(this.listenInterval);
@@ -70,13 +72,15 @@ export class AudioService {
   }
 
   public Add(audio):void{
-    this.playList.push(audio);
-    if(this.playList.length === 1){
-      this.PlayIndex(0);
-      this.playData.MicName = audio.name;
-      this.playData.artist = audio.artists[0].name
-    }
-
+    this._isExist = this.playList.find(value => value.id == audio.id);
+    if(!this._isExist){
+      this.playList.push(audio);
+      if(this.playList.length === 1){
+        this.PlayIndex(0);
+        this.playData.MicName = audio.name;
+        this.playData.artist = audio.artists[0].name
+      }
+    }  
   }
 
   public Next(): void {

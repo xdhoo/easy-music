@@ -9,11 +9,11 @@ import { HttpClient } from '@angular/common/http';
       <h4>EASY - MUSIC</h4>
     </div>
     <div class="col-md-3">
-      <input type="text" placeholder="搜索音乐，视频，歌词，电台" [(ngModel)]="key">
+      <input type="text" placeholder="搜索音乐，视频，歌词，电台" [(ngModel)]="key"><button (click)="onSearch()">search</button>
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-3">
-      <a>未登录</a>
+      
     </div>
   </div>
   `,
@@ -30,13 +30,14 @@ export class HeaderComponent implements OnInit {
 
   onSearch(){
     this.params = {
-      "TransCode": "020116",
+      "TransCode": "020112",
       "OpenId": "123456789",
       "Body": {
-        "key": this.key
+          "SongListId": "141998290"
       }
-    }
-    this.http.post('https://api.hibai.cn/api/index/index',this.params)
+  }
+    // this.http.get('/apis/api/v3/song/detail?id=418603077&c=[{"id":"418603077"}]').subscribe(res =>console.log(res))
+    this.http.post('/apis/api/index/index',this.params)
       .subscribe(res=>{console.log(res)})
   }
 }

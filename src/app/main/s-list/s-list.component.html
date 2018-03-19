@@ -21,7 +21,7 @@
         </tr>        
       </thead>
       <tbody>
-        <tr *ngFor="let list of listData.tracks;index as i" (click)="onPlay(list)">
+        <tr *ngFor="let list of listData.tracks;index as i" (click)="onPlay(list)" title="添加至播放列表">
           <td>{{ i + 1}}</td>
           <td>{{list.name}}</td>
           <td>{{list.artists[0].name}}</td>

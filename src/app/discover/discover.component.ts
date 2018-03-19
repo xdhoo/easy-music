@@ -16,9 +16,6 @@ export class DiscoverComponent implements OnInit {
       navName:'歌单',
       navUrl:'/discover/miclist'
     },{
-      navName:'主播电台',
-      navUrl:'/discover/radio'
-    },{
       navName:'排行榜',
       navUrl:'/discover/rank'
     },{

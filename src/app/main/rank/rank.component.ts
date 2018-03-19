@@ -15,7 +15,7 @@ import { Component, OnInit, Input } from '@angular/core';
           <span *ngFor="let art of mic.artists.slice(0,2)">{{art.name}} </span></a>
           </li>
         </ol>
-        <div class="rk-more text-right"><a [routerLink]="['/playlist']" [queryParams]="{id:item.id,type:1}">查看全部>></a></div>
+        <div class="rk-more text-right"><a [routerLink]="['/discover/playlist']" [queryParams]="{id:item.id,type:1}">查看全部>></a></div>
       </dd>
     </dl>
   </div>

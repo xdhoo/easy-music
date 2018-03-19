@@ -42,7 +42,7 @@ export class SListComponent implements OnInit {
       }else{
         this.getdata.getSingerlist(this.listId)
         .then(res => {
-          this.listData = res.list;
+          this.listData = res;
         })
         .catch()
       }

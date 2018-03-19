@@ -8,6 +8,7 @@ import { RankingListComponent } from './ranking-list/ranking-list.component';
 import { LatestMicComponent } from './latest-mic/latest-mic.component';
 import { RadioStationComponent } from './radio-station/radio-station.component';
 import { RecoDetailComponent } from './recommend/reco-detail/reco-detail.component';
+import { SListComponent } from '../main/s-list/s-list.component';
 
 const discoverRoutes:Routes = [
     { 
@@ -17,6 +18,7 @@ const discoverRoutes:Routes = [
             { path: '',redirectTo:'recommend',pathMatch:'full'},
             { path: 'recommend', component:RecommendComponent},
             // { path: ':id', component:RecoDetailComponent},
+            { path: 'playlist',component:SListComponent},
             { path: 'miclist', component:MiclistComponent},
             { path: 'singer', component:SingerComponent},
             { path: 'rank' , component:RankingListComponent},

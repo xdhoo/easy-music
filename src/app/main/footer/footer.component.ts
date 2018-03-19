@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayData } from '../main-model';
 import { AudioService } from '../../service/audio.service';
-import { validateConfig } from '../../../../node_modules/_@angular_router@5.2.9@@angular/router/src/config';
 
 @Component({
   selector: 'app-footer',
@@ -13,7 +12,9 @@ export class FooterComponent implements OnInit {
   private _left;
   private _width;
   private _rStart;
-  playData;
+  playData:any;
+  playlists:any;
+  listTag:boolean = false;
 
   flag:boolean;
   percent;
@@ -23,11 +24,9 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
 
-    this.audio.cast.subscribe(
-      {
-        next:value =>{this.playData = value}
-      }
-    )
+    this.audio.cast.subscribe({
+      next:value =>{this.playData = value}
+    })
     this._left = $('#f_progressD').offset().left;
     this._width = $('#f_progressD').width();
     this.flag = false;
@@ -58,11 +57,9 @@ export class FooterComponent implements OnInit {
 
   onplay(){
     this.audio.Toogle();
-    this.audio.cast.subscribe(
-      {
-        next:value =>{this.playData = value}
-      }
-    )
+    this.audio.cast.subscribe({
+      next:value =>{this.playData = value}
+    })
   };
 
   onNext(){
@@ -71,6 +68,19 @@ export class FooterComponent implements OnInit {
 
   onPrev(){
     this.audio.Prev();
-  }
+  };
 
+  onList(){
+    if(this.listTag){
+      $('#listModal').modal('hide');
+      this.listTag = false;
+    } else {
+      $('#listModal').modal('show');
+      this.playlists = this.audio.PlayList();
+      this.listTag = true;
+    }
+  }
+  onPlayIt(item){
+    this.audio.Toogle(item);
+  }
 }

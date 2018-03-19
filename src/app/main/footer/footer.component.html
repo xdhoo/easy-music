@@ -3,7 +3,8 @@
     <div class="left_ctrl">
       <div class="f_detail_ctrl">
         <i class="playPrev fa fa-step-backward fa-2x" title="上一曲 ctrl + left" (click)="onPrev()"></i>
-        <i class="fa fa-2x" [ngClass]="{'fa-pause-circle-o':playData.IsPlaying,'fa-play-circle-o':!playData.IsPlaying}"  title="播放/暂停 ctrl + space" (click)="onplay()"></i>
+        <i class="fa fa-2x" [ngClass]="{'fa-pause-circle-o':playData.IsPlaying,'fa-play-circle-o':!playData.IsPlaying}" title="播放/暂停 ctrl + space"
+          (click)="onplay()"></i>
         <i class="playNext fa fa-step-forward fa-2x" title="下一曲 ctrl + right" (click)="onNext()"></i>
       </div>
       <div class="f_progress" id="f_progress">
@@ -14,17 +15,48 @@
         <div class="f_progress_bar" id="f_progress">
           <div class="duration" id="f_progressD" (click)="progressClick($event)">
             <div class="buffering" [ngStyle]="{'width':playData.percent}"></div>
-            <div class="real" ></div>
+            <div class="real"></div>
           </div>
           <div id="range" class="range" [ngStyle]="{'left':playData.percent}"></div>
         </div>
       </div>
     </div>
     <div class="right_ctrl">
-      <span class="play_type" ></span>
+      <span class="play_type"></span>
     </div>
     <div class="right_ctrl">
-      <span class="play_type" title="打开播放列表"><i class="fa fa-list"></i></span>
+      <span class="play_type" title="切换" (click)="onChange()"><i class="fa fa-random"></i></span>        
+      <span class="play_type" title="打开播放列表" (click)="onList()"><i class="fa fa-list"></i></span>
+    </div>
+    <div class="fade imodal" data-backdrop="false" id="listModal" tabindex="-1" role="dialog" aria-labelledby="listModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+            <h5 class="modal-title" id="listModalLabel">
+              播放列表
+            </h5>
+          </div>
+          <form class="form form-horizontal" id="listform" role="form">
+            <div class="modal-body ">
+              <div class="form-body">
+                <div class="row">
+                  <table class="table itable">
+                    <tr *ngFor = "let item of playlists" title="播放" (click)="onPlayIt(item)">
+                      <td>{{item.name}}</td>
+                      <td>{{item.artists[0].name}}</td>
+                      <td>{{item.duration/1000 | iTime}}</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
+  
 </div>

@@ -9,7 +9,7 @@ import { SListComponent } from './main/s-list/s-list.component';
 const routes:Routes = [
     { path: '', redirectTo: '/discover/recommend', pathMatch: 'full'},
     { path: 'discover', component: DiscoverComponent},
-    { path: 'playlist',component:SListComponent},
+    
     { path: 'video', component: VideoComponent},
     { path: 'fm', component: FmComponent},
     { path: 'friends', component: FriendsComponent}
