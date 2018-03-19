@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
       }
   }
     // this.http.get('/apis/api/v3/song/detail?id=418603077&c=[{"id":"418603077"}]').subscribe(res =>console.log(res))
-    this.http.post('/apis/api/index/index',this.params)
+    this.http.post('http://localhost:3333/api/index/index',this.params)
       .subscribe(res=>{console.log(res)})
   }
 }

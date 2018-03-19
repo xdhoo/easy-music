@@ -3,6 +3,7 @@ import { ListData } from '../../main/main-model';
 import { HttpClient } from '@angular/common/http';
 import { Jsonp } from '@angular/http';
 import 'rxjs/add/operator/toPromise'
+import { GetDataService } from '../../service/get-data.service';
 
 @Component({
   selector: 'app-recommend',
@@ -13,111 +14,12 @@ export class RecommendComponent implements OnInit {
 
   playlist;
   playlists;
-  videoData:Array<ListData> = [
-    {
-      id:1,
-      title:'采样的魅力',
-      url:'http://placehold.it/245x140',
-      userName:'Aric',
-      createDate:'2017-01-12',
-      listener:230,
-      content:'采样通常是指从那些比较具有时代特色或有一定影响力的老歌曲中抽取出部分较为突出或具有可循环性的音轨或节拍，将这个部分作为新歌曲参考的样本（运用到其中），在此之上进行改编和创作。',
-      music:[
-        {
-          id:1,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:2,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:3,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        }
-      ]
-    },{
-      id:2,
-      title:'采样的魅力',
-      url:'http://placehold.it/245x140',
-      userName:'Aric',
-      createDate:'2017-01-12',
-      listener:230,
-      content:'采样通常是指从那些比较具有时代特色或有一定影响力的老歌曲中抽取出部分较为突出或具有可循环性的音轨或节拍，将这个部分作为新歌曲参考的样本（运用到其中），在此之上进行改编和创作。',
-      music:[
-        {
-          id:1,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:2,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:3,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        }
-      ]
-    },{
-      id:3,
-      title:'采样的魅力',
-      url:'http://placehold.it/245x140',
-      userName:'Aric',
-      createDate:'2017-01-12',
-      listener:230,
-      content:'采样通常是指从那些比较具有时代特色或有一定影响力的老歌曲中抽取出部分较为突出或具有可循环性的音轨或节拍，将这个部分作为新歌曲参考的样本（运用到其中），在此之上进行改编和创作。',
-      music:[
-        {
-          id:1,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:2,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        },{
-          id:3,
-          micName:'Chill Bill',
-          singer:'the ShowBoys',
-          src:'',
-          album:'Chill Bill',
-          time:'04:22'
-        }
-      ]
-    }
-  ]
 
-  constructor(private http:HttpClient,private jsonp:Jsonp) { }
+  constructor(private http:HttpClient,private jsonp:Jsonp,private getdata:GetDataService) { }
 
   ngOnInit() {
 
-    this.http.get('assets/json/playlist.json').toPromise().then(data => {
+    this.getdata.getPlayLists().then(data => {
       let _playlists ;
       _playlists= data;
       this.playlist = _playlists.filter((value,index) =>{
@@ -127,12 +29,7 @@ export class RecommendComponent implements OnInit {
           return;
         }
       })
-    })
-    // .subscribe(data =>{
-      
-    //   this.playlist = data;
-      
-    // })
+    }).catch()
   }
 
   ontest(){
