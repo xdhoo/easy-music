@@ -12,7 +12,7 @@ export class SListComponent implements OnInit {
   listId:any;
   type:any;
   ltype:any;
-  listData = { };
+  listData :any;
   constructor(
     private route:ActivatedRoute,
     private getdata:GetDataService,
@@ -36,13 +36,14 @@ export class SListComponent implements OnInit {
       if(this.ltype){
         this.getdata.getPlayList(this.listId)
         .then(res => {
-          this.listData = res.result;
+          this.listData = res;
         })
         .catch()
       }else{
         this.getdata.getSingerlist(this.listId)
         .then(res => {
           this.listData = res;
+          console.log(res);
         })
         .catch()
       }

@@ -5,11 +5,11 @@ import { VideoComponent } from './video/video.component';
 import { FmComponent } from './fm/fm.component';
 import { FriendsComponent } from './friends/friends.component';
 import { SListComponent } from './main/s-list/s-list.component';
+import { SResultComponent } from './main/s-result/s-result.component';
 
 const routes:Routes = [
     { path: '', redirectTo: '/discover/recommend', pathMatch: 'full'},
     { path: 'discover', component: DiscoverComponent},
-    
     { path: 'video', component: VideoComponent},
     { path: 'fm', component: FmComponent},
     { path: 'friends', component: FriendsComponent}

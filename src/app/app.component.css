@@ -26,6 +26,11 @@
     position: fixed;
     
 }
+.c-right-wrapper{
+    max-width: 900px;
+    margin: auto;   
+}
+/*
 @media (min-width:768px) {
     .c-right-wrapper{
         padding:0 10px;
@@ -40,10 +45,7 @@
     .c-right-wrapper{
         padding:0 20px;
     }
-}
-.c-right-wrapper{
-    /* margin-left: 245px; */
-}
+} */
 /*footer-wrapper*/
 .footer-wrapper{
     height: 50px;

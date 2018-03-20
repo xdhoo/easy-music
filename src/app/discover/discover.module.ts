@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { DiscoverRoutingModule } from './discover-routing.module';
 import { RecoDetailComponent } from './recommend/reco-detail/reco-detail.component';
-import { SMenuComponent } from '../main/s-menu/s-menu.component';
 import { RecommendComponent } from './recommend/recommend.component';
 import { MiclistComponent } from './miclist/miclist.component';
 import { RadioStationComponent } from './radio-station/radio-station.component';
@@ -37,7 +36,6 @@ import { PipesModule } from '../pipes/pipes.module';
         SingerComponent,
         LatestMicComponent,
         RecoDetailComponent,
-        SMenuComponent,
     ],
 })
 

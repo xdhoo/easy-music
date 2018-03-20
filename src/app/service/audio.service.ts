@@ -77,8 +77,8 @@ export class AudioService {
       this.playList.push(audio);
       if(this.playList.length === 1){
         this.PlayIndex(0);
-        this.playData.MicName = audio.name;
-        this.playData.artist = audio.artists[0].name
+        this.playData.MicName = audio.title?audio.title:audio.name;
+        this.playData.artist = audio.author
       }
     }  
   }
@@ -176,8 +176,8 @@ export class AudioService {
         this.playData.IsPlaying = true;
       }
       this.playData.Index = index;
-      this.playData.MicName = this.playList[this.playData.Index].name;        
-      this.playData.artist = this.playList[this.playData.Index].artists[0].name;        
+      this.playData.MicName = this.playList[this.playData.Index].title?this.playList[this.playData.Index].title:this.playList[this.playData.Index].name;        
+      this.playData.artist = this.playList[this.playData.Index].author;        
       
       this.playdata.next(this.playData);
     } else {

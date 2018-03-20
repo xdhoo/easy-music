@@ -1,16 +1,44 @@
 <div class="m-list-con">
-  <div class="m-list-con-t">
+  <div class="m-list-con-t" *ngIf="ltype">
     <div class="cont-l">
-      <img src="{{listData.src}}" alt="">
+      <img src="{{listData?.Body?.coverImgUrl}}" alt="">
     </div>
     <div class="cont-r">
-      <h4 *ngIf="type != 1">{{listData.name}}</h4>
-      <h3 *ngIf="type == 1" style="margin-left:100px;">{{listData.title}}</h3>
-      <p *ngIf="type != 1">简介：{{listData.description |titleFormat:360}}</p>
+      <h4>{{listData?.Body?.name}}</h4>
+      <h3 *ngIf="type == 1" style="margin-left:100px;">{{listData?.Body?.title}}</h3>
+    </div>
+  </div>
+  <div class="m-list-con-t" *ngIf="!ltype">
+    <div class="cont-l">
+      <img src="{{listData?.src}}" alt="">
+    </div>
+    <div class="cont-r">
+      <h4>{{listData?.name}}</h4>
+      <p *ngIf="type != 1">简介：{{listData?.description |titleFormat:360}}</p>
     </div>
   </div>
   <div class="m-list-con-b">
-    <table class="table m-list-table">
+    <table class="table m-list-table" *ngIf="ltype">
+      <thead>
+        <tr>
+          <th></th>
+          <th>音乐标题</th>
+          <th>歌手</th>
+          <!-- <th>专辑</th> -->
+          <th>时长</th>
+        </tr>        
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of listData?.Body?.songs;index as i" (click)="onPlay(list)" title="添加至播放列表">
+          <td>{{ i + 1}}</td>
+          <td>{{list.title}}</td>
+          <td>{{list.author}}</td>
+          <!-- <td>{{list.album.name}}</td> -->
+          <td>{{list.time |iTime}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table m-list-table" *ngIf="!ltype">
       <thead>
         <tr>
           <th></th>
@@ -21,10 +49,10 @@
         </tr>        
       </thead>
       <tbody>
-        <tr *ngFor="let list of listData.tracks;index as i" (click)="onPlay(list)" title="添加至播放列表">
+        <tr *ngFor="let list of listData?.tracks;index as i" (click)="onPlay(list)" title="添加至播放列表">
           <td>{{ i + 1}}</td>
           <td>{{list.name}}</td>
-          <td>{{list.artists[0].name}}</td>
+          <td>{{list.author}}</td>
           <td>{{list.album.name}}</td>
           <td>{{list.duration/1000 |iTime}}</td>
         </tr>

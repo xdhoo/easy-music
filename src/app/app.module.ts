@@ -21,6 +21,7 @@ import { PipesModule } from './pipes/pipes.module';
 import { AudioService } from './service/audio.service';
 import { SListComponent } from './main/s-list/s-list.component';
 import { GetDataService } from './service/get-data.service';
+import { SResultComponent } from './main/s-result/s-result.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { GetDataService } from './service/get-data.service';
     VideoComponent,
     FriendsComponent,
     SListComponent,
+    SResultComponent,
     
   ],
   imports: [

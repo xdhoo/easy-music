@@ -1,0 +1,22 @@
+<div class="m-list-con">
+  <div class="m-list-con-b">
+    <table class="table m-list-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>音乐标题</th>
+          <th>歌手</th>
+          <th>时长</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of resultData?.Body;index as i" (click)="onPlay(list)" title="添加至播放列表">
+          <td><img src="{{list.pic}}" style="width:55px;" alt=""></td>
+          <td>{{list.title}}</td>
+          <td>{{list.author}}</td>
+          <td>{{list.time |iTime}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

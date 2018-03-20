@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
       <h4>EASY - MUSIC</h4>
     </div>
     <div class="col-md-3">
-      <input type="text" placeholder="搜索音乐，视频，歌词，电台" [(ngModel)]="key"><button (click)="onSearch()">search</button>
+      <input type="text" #box placeholder="搜索音乐，视频，歌词，电台" (keyup.enter)="onEnter(box.value)" [(ngModel)]="key">
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-3">
@@ -23,21 +24,16 @@ export class HeaderComponent implements OnInit {
 
   key;
   params;
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private route:Router) { }
 
   ngOnInit() {
   }
 
-  onSearch(){
-    this.params = {
-      "TransCode": "020112",
-      "OpenId": "123456789",
-      "Body": {
-          "SongListId": "141998290"
+  onEnter(value){
+    this.route.navigate(['discover/search'],{
+      queryParams:{
+        key:value
       }
-  }
-    // this.http.get('/apis/api/v3/song/detail?id=418603077&c=[{"id":"418603077"}]').subscribe(res =>console.log(res))
-    this.http.post('http://localhost:3333/api/index/index',this.params)
-      .subscribe(res=>{console.log(res)})
+    });
   }
 }

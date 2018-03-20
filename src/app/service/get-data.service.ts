@@ -14,14 +14,17 @@ export class GetDataService {
       .catch()
   }
   public getPlayList(id:string){
-    return this.http.get('assets/json/list-detail.json')
+    let params = {
+      "TransCode": "020111",
+      "OpenId": "123456789",
+      "Body": {
+          "SongListId": id
+      }
+    }
+    return this.http.post('http://localhost:3333/api/index/index',params)
       .toPromise()
-      .then(data =>{
-        let _playlist;
-        _playlist = data;
-        return _playlist.find((value) =>value.id == id);
-      })
-      .catch()
+      .then(res => res)
+      .catch();
   };
 
   public getRankLists(){
@@ -32,16 +35,32 @@ export class GetDataService {
   };
 
   public getRanklist(id){
-    return this.http.get('assets/json/ranking-list.json')
+    let params = {
+      "TransCode": "020111",
+      "OpenId": "123456789",
+      "Body": {
+          "SongListId": id
+      }
+    }
+    return this.http.post('http://localhost:3333/api/index/index',params)
       .toPromise()
-      .then(data => {
-        let _ranllist;
-        _ranllist = data;
-        return _ranllist.find(value => value.id == id);
-      })
-      .catch()
+      .then(res => res)
+      .catch();
   }
 
+  public getSearchlist(value){
+    let params = {
+      "TransCode": "020116",
+      "OpenId": "123456789",
+      "Body": {
+          "key": value
+      }
+    }
+    return this.http.post('http://localhost:3333/api/index/index',params)
+      .toPromise()
+      .then(res => res)
+      .catch();
+  }
   public getSingerlists(){
     return this.http.get('assets/json/artists.json')
       .toPromise()

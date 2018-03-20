@@ -17,6 +17,7 @@ import { ListData } from '../main-model';
           </div>
         </div>      
         <p>{{item.title | titleFormat:13}}</p>
+        <p>{{item.name | titleFormat:13}}</p>
       </li>
     </ul>
   </div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SMenuComponent } from './s-menu.component';
+import { SResultComponent } from './s-result.component';
 
-describe('SMenuComponent', () => {
-  let component: SMenuComponent;
-  let fixture: ComponentFixture<SMenuComponent>;
+describe('SResultComponent', () => {
+  let component: SResultComponent;
+  let fixture: ComponentFixture<SResultComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SMenuComponent ]
+      declarations: [ SResultComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SMenuComponent);
+    fixture = TestBed.createComponent(SResultComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
