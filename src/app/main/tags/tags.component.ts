@@ -9,7 +9,7 @@ import { TagData } from '../main-model';
       <dt>{{data.title}}：</dt>
       <dd>
         <ng-template ngFor let-item [ngForOf]="data.tags">
-          <a href="">{{item.tagName}}</a>
+          <a>{{item.tagName}}</a>
           <span>|</span>
         </ng-template>        
       </dd>

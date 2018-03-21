@@ -9,15 +9,15 @@ import { ListData } from '../main-model';
       <li *ngFor="let item of data">
         <div class="c-list-img">
           <a [routerLink]="['/discover/playlist']" [queryParams]="{id:item.id,type:2,ltype:item.title}">
-            <img [src]=item.src alt="">
+            <img [src]=item.src alt="" title="{{item.title || item.name}}">
           </a>
           <div class="c-list-bottom">
             <span><i class="fa fa-music"></i> {{item.times}}</span>
             <a href=""><i class="fa fa-play-circle-o"></i></a>            
           </div>
         </div>      
-        <p>{{item.title | titleFormat:13}}</p>
-        <p>{{item.name | titleFormat:13}}</p>
+        <p title="{{item.title}}">{{item.title | titleFormat:13}}</p>
+        <p title="{{item.name}}">{{item.name | titleFormat:13}}</p>
       </li>
     </ul>
   </div>
