@@ -21,7 +21,7 @@ export class GetDataService {
           "SongListId": id
       }
     }
-    return this.http.post('http://47.97.118.232/api/index/index',params)
+    return this.http.post('http://47.97.118.232:3333/api/index/index',params)
       .toPromise()
       .then(res => res)
       .catch();
@@ -42,7 +42,7 @@ export class GetDataService {
           "SongListId": id
       }
     }
-    return this.http.post('http://47.97.118.232/api/index/index',params)
+    return this.http.post('http://47.97.118.232:3333/api/index/index',params)
       .toPromise()
       .then(res => res)
       .catch();
@@ -56,7 +56,7 @@ export class GetDataService {
           "key": value
       }
     }
-    return this.http.post('http://47.97.118.232/api/index/index',params)
+    return this.http.post('http://47.97.118.232:3333/api/index/index',params)
       .toPromise()
       .then(res => res)
       .catch();
