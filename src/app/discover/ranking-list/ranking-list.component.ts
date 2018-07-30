@@ -7,13 +7,13 @@ import { GetDataService } from '../../service/get-data.service';
   selector: 'app-ranking-list',
   templateUrl: './ranking-list.component.html',
   styleUrls: ['./ranking-list.component.css'],
-  providers:[GetDataService]
+  providers: [GetDataService]
 })
 export class RankingListComponent implements OnInit {
 
   rankData;
   listData;
-  constructor(public getDataService:GetDataService,private http:HttpClient) { }
+  constructor(public getDataService: GetDataService, private http: HttpClient) { }
 
   ngOnInit() {
 
@@ -21,8 +21,8 @@ export class RankingListComponent implements OnInit {
       .then(res => {
         let _list;
         _list = res;
-        this.rankData = _list.filter((value,index) => index < 3)
-        this.listData = _list.filter((value,index) => index > 2);
+        this.rankData = _list.filter((value, index) => index < 3);
+        this.listData = _list.filter((value, index) => index > 2);
       });
   }
 

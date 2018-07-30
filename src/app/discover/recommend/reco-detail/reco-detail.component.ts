@@ -8,16 +8,16 @@ import { ActivatedRoute, Params} from '@angular/router';
 })
 export class RecoDetailComponent implements OnInit {
 
-  listId:string;
+  listId: string;
 
-  constructor( private route:ActivatedRoute) { }
+  constructor( private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(data => {
       this.listId = data.id;
     });
 
-    
+
   }
 
 }
