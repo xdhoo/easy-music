@@ -11,5 +11,12 @@ export class PVideoComponent implements OnInit {
 
   ngOnInit() {
   }
+  playPause() {
 
+  }
+  makeBig() {
+
+  }
+  makeNormal() {}
+  makeSmall() {}
 }

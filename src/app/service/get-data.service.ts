@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class GetDataService {
 
+  private url = 'http://122.152.225.121:3333';
   constructor(private http: HttpClient) {
 
   }
@@ -21,7 +22,7 @@ export class GetDataService {
           'SongListId': id
       }
     };
-    return this.http.post('http://47.97.118.232:3333/api/index/index', params)
+    return this.http.post(this.url + '/api/index/index', params)
       .toPromise()
       .then(res => res)
       .catch();
@@ -42,7 +43,7 @@ export class GetDataService {
           'SongListId': id
       }
     };
-    return this.http.post('http://47.97.118.232:3333/api/index/index', params)
+    return this.http.post(this.url + '/api/index/index', params)
       .toPromise()
       .then(res => res)
       .catch();
@@ -56,7 +57,7 @@ export class GetDataService {
           'key': value
       }
     };
-    return this.http.post('http://47.97.118.232:3333/api/index/index', params)
+    return this.http.post(this.url + '/api/index/index', params)
       .toPromise()
       .then(res => res)
       .catch();

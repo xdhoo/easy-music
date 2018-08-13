@@ -11,7 +11,7 @@ import { TagData } from '../main-model';
         <ng-template ngFor let-item [ngForOf]="data.tags">
           <a>{{item.tagName}}</a>
           <span>|</span>
-        </ng-template>        
+        </ng-template>
       </dd>
     </dl>
   </div>
@@ -19,7 +19,7 @@ import { TagData } from '../main-model';
 })
 export class TagsComponent implements OnInit {
 
-  @Input() data:Array<TagData>;
+  @Input() data: TagData;
 
   constructor() { }
 

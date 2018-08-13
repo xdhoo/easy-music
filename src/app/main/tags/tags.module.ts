@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { TagsComponent } from './tags.component';
 
 @NgModule({
-    imports:[
+    imports: [
         CommonModule
     ],
-    declarations:[
+    declarations: [
         TagsComponent
     ],
-    exports:[
+    exports: [
         TagsComponent
     ]
 })

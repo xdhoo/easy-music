@@ -8,17 +8,14 @@ import { VideoData } from '../../main/main-model';
 })
 export class VideosComponent implements OnInit {
 
-  videosData:Array<VideoData> = [
+  videosData: Array<VideoData> = [
     {
-      id:1,
-      url:'http://placehold.it/245x140',
-      content:'sdfs',
-      src:'http://www.w3school.com.cn/tiy/loadtext.asp?f=html5_video'
+      id: 1,
+      url: 'http://placehold.it/245x140',
+      content: 'sdfs',
+      src: 'http://www.w3school.com.cn/tiy/loadtext.asp?f=html5_video'
     }
-  ]
-    
-  
-
+  ];
   constructor() { }
 
   ngOnInit() {

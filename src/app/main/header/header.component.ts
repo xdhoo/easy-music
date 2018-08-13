@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
     </div>
     <div class="col-md-4"></div>
     <div class="col-md-3">
-      
+
     </div>
   </div>
   `,
@@ -24,15 +24,15 @@ export class HeaderComponent implements OnInit {
 
   key;
   params;
-  constructor(private http:HttpClient,private route:Router) { }
+  constructor(private http: HttpClient, private route: Router) { }
 
   ngOnInit() {
   }
 
-  onEnter(value){
-    this.route.navigate(['discover/search'],{
-      queryParams:{
-        key:value
+  onEnter(value) {
+    this.route.navigate(['discover/search'], {
+      queryParams: {
+        key: value
       }
     });
   }
